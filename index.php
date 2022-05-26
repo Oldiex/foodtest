@@ -31,7 +31,7 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
     </div>
         </div>
         <div class="header__right-block">
-            <button data-modal class="btn btn_white">Связаться с нами</button>
+            <button data-modal class="btn btn_white">Зворотний дзвiнок</button>
         </div>
         
     </header>
@@ -56,16 +56,17 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
                 <div class="tabcontent ">
                     <img src="img/tabs/vegy.jpg" alt="vegy">
                     <div class="tabcontent__descr">
-                        Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для
-                        людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с
-                        оптимальной ценой и высоким качеством!
+                        Наша компанія розпочала свій шлях у 2022 році. Розпочали проацювати як компанія, що доставляє їжу містом
+                        та його околицями. У нас багатий вибір страв та напоїв. Ми завжди контролюємо приготування страв та 
+                        готоуємо лише зі свіжих продуктів.
+                       
                     </div>
                 </div>
                 <div class="tabcontent">
                     <img src="img/tabs/elite.jpg" alt="elite">
                     <div class="tabcontent__descr">
-                        Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение
-                        блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!
+                    Нам подобається дивувати Вас, і ми часто проводимо різні розіграші піци та ролів, 
+                    якщо хочете постійно бути в курсі підпивайтеся на наш інстаграм, щоб нічого не пропустити
                     </div>
                 </div>
                 <div class="tabcontent">
@@ -84,16 +85,16 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
                     </div>
                 </div>
                 <div class="tabheader">
-                    <h3>Выберите стиль питания</h3>
+                    <h3>Дізнайтеся більше!</h3>
                     <div class="tabheader__items">
-                        <div class="tabheader__item tabheader__item_active">Фитнес</div>
-                        <div class="tabheader__item">Премиум</div>
+                        <div class="tabheader__item tabheader__item_active">Про нас</div>
+                        <div class="tabheader__item">Акції</div>
                         <div class="tabheader__item">Постное</div>
                         <div class="tabheader__item">Сбалансированное</div>
                     </div>
                 </div>
             </div>
-            <div class="preview__life">Живи полной жизнью!</div>
+            <div class="preview__life">Насолуджуйся життям з нами!</div>
         </div>
     </div>
 

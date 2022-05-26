@@ -18,7 +18,7 @@ $idd=$_GET['id']
     <script src="js/jquery2.js"></script>
 
 
-    <title>Фу сколька можна</title>
+    <title>Menu</title>
     <link  href="css/pizza.css" rel="stylesheet">
    
 </head>
@@ -47,7 +47,7 @@ $idd=$_GET['id']
     <?php if (!empty($categ)): ?>
                 <?php foreach ($categ as $cat): ?>
 		<ul>
-			<li><a href="#"><div class="imgn" cid="<?=$cat['id'];?>"><img src="img/aside-icons/pizza.png"></div><p class ="loll" ><?=$cat['name'];?></p></a></li>
+			<li class = "imgn1" cid="<?=$cat['id'];?>"><a href="#"><div class="imgn" ><img src="img/aside-icons/pizza.png"></div><p class ="loll" ><?=$cat['name'];?></p></a></li>
 			
 		</ul>
         <?php endforeach; ?>
@@ -59,29 +59,7 @@ $idd=$_GET['id']
         <h2 class="title">Пицца</h2>
 
         <div class="menu__field">
-            <div class="container">
-            <?php if (!empty($result)): ?>
-                <?php foreach ($result as $product): ?>
-            <div class="menu__item">
-                    <img src="img/tabs/<?=$product['img_path'];?>" alt="vegy">
-                    <div class="product-content">
-                    <h3 class="menu__item-subtitle"><?=$product['name'];?></h3>
-                    <div class="menu__item-descr"><?=$product['description'];?></div>
-                    </div>
-                    <div class="menu__item-divider"></div>
-                    <div class="menu__item-price">
-                    </div>
-                    <div class="containerloxa">
-                    <div class="menu__item-total"><span><?=$product['price'];?></span> грн</div>
-                    <button class="btnm" data-popup="popup-order" data-id="<?= $product['id'] ?>">Добавить в корзину</button>
-                    <input hidden type="number" readonly value="1" min = 1 class="form-control text-center"  name="qty1" >
-                    </div>
-                </div>
-                <?php endforeach; ?>
-                <?php endif; ?>
-                
-
-            </div>
+        <div class="container" id = "meniii"></div>
         </div>
     </div>
 
@@ -103,12 +81,7 @@ $idd=$_GET['id']
                 <a href="#" class="link">+38 066 473 1105</a>
             </div>
         </div>
-        <div id="get_category">
-							<!--Here we get product jquery Ajax Request-->
-						</div>
-						<div id="get_product">
-							<!--Here we get product jquery Ajax Request-->
-						</div>
+       
     </footer>
 
     <div class="modal">

@@ -32,13 +32,13 @@ $(document).ready(function(){
 			method:	"POST",
 			data	:	{getProduct:1},
 			success	:	function(data){
-				$("#get_product").html(data);
+				$("#meniii").html(data);
 			}
 		})
 	}
 
-$("body").delegate(".imgn","click",function(event){
-	$("#get_product").html("<h3>Loading...</h3>");
+$("body").delegate(".imgn1","click",function(event){
+	$("#meniii").html("<h3>Loading...</h3>");
 	event.preventDefault();
 	var cid = $(this).attr('cid');
 	
@@ -47,7 +47,7 @@ $("body").delegate(".imgn","click",function(event){
 		method	:	"POST",
 		data	:	{get_seleted_Category:1,id:cid},
 		success	:	function(data){
-			$("#get_product").html(data);
+			$("#meniii").html(data);
 			// if($("body").width() < 480){
 			// 	$("body").scrollTop(683);
 			// }

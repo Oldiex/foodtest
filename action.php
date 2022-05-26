@@ -50,18 +50,25 @@ if(isset($_POST["getProduct"])){
 			$pro_title = $row['name'];
 			$pro_price = $row['price'];
 			$pro_image = $row['img_path'];
+			$pro_desc = $row['description'];
 			echo "
-				<div class='col-md-4'>
-							<div class='panel panel-info'>
-								<div class='panel-heading'>$pro_title</div>
-								<div class='panel-body'>
-									<img src='img/tabs/$pro_image' style='width:220px; height:250px;'/>
-								</div>
-								<div class='panel-heading'>. $pro_price.00/
-									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Add To Cart</button>
-								</div>
-							</div>
-						</div>	
+			
+            
+            	<div class='menu__item'>
+                    <img src='img/tabs/$pro_image' alt='vegy'>
+                	<div class='product-content'>
+                    	<h3 class='menu__item-subtitle'>$pro_title</h3>
+                    <div class='menu__item-descr'>$pro_desc</div>
+                    </div>
+                    <div class='menu__item-divider'></div>
+                    <div class='containerloxa'>
+                    	<div class='menu__item-total'><span>$pro_price</span> грн</div>
+                    	<button class='btnm' data-popup='popup-order' data-id='$pro_id'>Добавить в корзину</button>
+                    	<input hidden type='number' readonly value='1' min = 1 class='form-control text-center'  name='qty1' >
+                    </div>
+				</div>	
+
+				
 			";
 		}
 	}
@@ -81,23 +88,26 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 	
 	$run_query = mysqli_query($induction,$sql);
 	while($row=mysqli_fetch_array($run_query)){
-		$pro_id    = $row['id'];
-		$pro_cat   = $row['category_id'];
-		$pro_title = $row['name'];
-		$pro_price = $row['price'];
-		$pro_image = $row['img_path'];
+			$pro_id    = $row['id'];
+			$pro_cat   = $row['category_id'];
+			$pro_title = $row['name'];
+			$pro_price = $row['price'];
+			$pro_image = $row['img_path'];
+			$pro_desc = $row['description'];
 			echo "
-				<div class='col-md-4'>
-							<div class='panel panel-info'>
-								<div class='panel-heading'>$pro_title</div>
-								<div class='panel-body'>
-									<img src='img/tabs/$pro_image' style='width:220px; height:250px;'/>
-								</div>
-								<div class='panel-heading'>Rs.$pro_price.00/-
-									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Add To Cart</button>
-								</div>
-							</div>
-						</div>	
+			<div class='menu__item'>
+			<img src='img/tabs/$pro_image' alt='vegy'>
+			<div class='product-content'>
+				<h3 class='menu__item-subtitle'>$pro_title</h3>
+			<div class='menu__item-descr'>$pro_desc</div>
+			</div>
+			<div class='menu__item-divider'></div>
+			<div class='containerloxa'>
+				<div class='menu__item-total'><span>$pro_price</span> грн</div>
+				<button class='btnm' data-popup='popup-order' data-id='$pro_id'>Добавить в корзину</button>
+				<input hidden type='number' readonly value='1' min = 1 class='form-control text-center'  name='qty1' >
+			</div>
+		</div>	
 						
 			";
 		}

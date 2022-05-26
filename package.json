@@ -1,0 +1,41 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "some description",
+  "main": "\t",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximShawcross/goodfoodelivery.git"
+  },
+  "keywords": [
+    "some",
+    "keyWords"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximShawcross/goodfoodelivery/issues"
+  },
+  "homepage": "https://github.com/MaximShawcross/goodfoodelivery#readme",
+  "browserslist": [
+    "> 1%"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.20.2",
+    "json-server": "^0.17.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "es6-promise": "^4.2.8",
+    "jshint": "^2.13.4",
+    "nodelist-foreach-polyfill": "^1.2.0"
+  }
+}

@@ -37,27 +37,58 @@ $(document).ready(function(){
 		})
 	}
 
-$("body").delegate(".imgn1","click",function(event){
-	$("#meniii").html("<h3>Loading...</h3>");
-	event.preventDefault();
-	var cid = $(this).attr('cid');
-	
-		$.ajax({
-		url		:	"action.php",
-		method	:	"POST",
-		data	:	{get_seleted_Category:1,id:cid},
-		success	:	function(data){
-			$("#meniii").html(data);
-			// if($("body").width() < 480){
-			// 	$("body").scrollTop(683);
-			// }
-		}
+	$("body").delegate(".imgn1","click",function(event){
+		$("#meniii").html("<h3>Loading...</h3>");
+		event.preventDefault();
+		var cid = $(this).attr('cid');
+		
+			$.ajax({
+			url		:	"action.php",
+			method	:	"POST",
+			data	:	{get_seleted_Category:1,id:cid},
+			success	:	function(data){
+				$("#meniii").html(data);
+				// if($("body").width() < 480){
+				// 	$("body").scrollTop(683);
+				// }
+			}
+		})
+
 	})
 
-})
 
+	$("body").delegate(".imgn1","click",function(event){
+		event.preventDefault();
+		var cid = $(this).attr('cid');
+		
+			$.ajax({
+			url		:	"action.php",
+			method	:	"POST",
+			data	:	{get_seleted_Category1:1,id:cid},
+			success	:	function(data){
+				$(".title").html(data);
+				// if($("body").width() < 480){
+				// 	$("body").scrollTop(683);
+				// }
+			}
+		})
 
+	})
 
+	let button = document.querySelectorAll(".img3");
+	button.forEach(item => {
+		item.addEventListener("click", () => {
+			
+			button.forEach(item =>{
+				item.classList.remove("selectedcategory");
+				
+			})
+			item.classList.add("selectedcategory");
+		})
+	
+	})
+
+	
 
 
 

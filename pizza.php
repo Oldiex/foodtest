@@ -31,7 +31,20 @@ $idd=$_GET['id']
         </div>
     <div class="header__links">
         <a href="#" class="header__link">Меню </a>
-        <a href="#" class="header__link">Корзина</a>
+        <!-- <a href="#" class="header__link">Корзина</a> -->
+        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Кошик</button>
+  <div id="myDropdown" class="dropdown-content">
+    <div class="dropdownheader" style = "width:400px">
+        <div class="stroka">
+            <div class="proverka">text</div>
+            
+
+        </div>
+    </div>
+    
+  </div>
+</div>
 
     </div>
         </div>
@@ -46,8 +59,8 @@ $idd=$_GET['id']
     <nav id="menuVertical">
     <?php if (!empty($categ)): ?>
                 <?php foreach ($categ as $cat): ?>
-		<ul>
-			<li class = "imgn1" cid="<?=$cat['id'];?>"><a href="#"><div class="imgn" ><img src="img/aside-icons/pizza.png"></div><p class ="loll" ><?=$cat['name'];?></p></a></li>
+		<ul class ="img3">
+			<li class = "imgn1" cid="<?=$cat['id'];?>"><a href="#"><div class="imgn" ><img class ="" src="img/aside-icons/pizza.png"></div><p class ="loll" ><?=$cat['name'];?></p></a></li>
 			
 		</ul>
         <?php endforeach; ?>
@@ -56,7 +69,7 @@ $idd=$_GET['id']
     
 </form>
     <div class="menu">
-        <h2 class="title">Пицца</h2>
+        <h2 class="title">Меню</h2>
 
         <div class="menu__field">
         <div class="container" id = "meniii"></div>
@@ -100,7 +113,9 @@ $idd=$_GET['id']
    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/bundle.js"></script>
-    
+
+
+
 <script>
     // $('.btnm').click(function(){ 
     //         var id = $(this).data('id');
@@ -136,6 +151,28 @@ $idd=$_GET['id']
 })
 });
 
+
+
+
+// drop down menu
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+// end
     </script>
 </body>
 

@@ -114,6 +114,27 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 	}
 
 
+
+
+
+	if(isset($_POST["get_seleted_Category1"])){
+		if(isset($_POST["get_seleted_Category1"])){
+			$id = $_POST["id"];
+			$sql = "SELECT name FROM category_list WHERE id = '$id'";
+		}
+		
+		$run_query = mysqli_query($induction,$sql);
+		while($row=mysqli_fetch_array($run_query)){
+				$pro_id    = $row['id'];
+				$pro_title = $row['name'];
+			
+				echo "
+				$pro_title
+							
+				";
+			}
+		}
+
 ?>
 
 

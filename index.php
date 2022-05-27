@@ -25,8 +25,8 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
         <a href="#"><img src="icons/Group 5.svg" alt="Логотип"></a>
         </div>
     <div class="header__links">
-        <a href="#" class="header__link">Меню </a>
-        <a href="#" class="header__link">Корзина</a>
+        <a href="pizza.php" class="header__link">Меню </a>
+        <!-- <a href="#" class="header__link">Корзина</a> -->
 
     </div>
         </div>
@@ -39,7 +39,7 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
     </div>
     <nav id="menuVertical">
 		<ul>
-			<li><a href="pizza.php"><div class="imgn"><img src="img/aside-icons/pizza.png"></div><p class ="loll">Пицца</p></a></li>
+			<li><a href="#"><div class="imgn"><img src="img/aside-icons/pizza.png"></div><p class ="loll">Пицца</p></a></li>
 			<li><a href="#"><div class="imgn"><img src="img/aside-icons/hamburger.png"></div><p class ="loll">Бургер</p></a></li>
 			<li><a href="#"><div class="imgn"><img src="img/aside-icons/sushi.png"></div><p class ="loll">Суши</p></a></li>
 			<li><a href="#"><div class="imgn"><img src="img/aside-icons/hot-soup.png"></div><p class ="loll">Супы</p></a></li>
@@ -72,16 +72,15 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
                 <div class="tabcontent">
                     <img src="img/tabs/post.jpg" alt="post">
                     <div class="tabcontent__descr">
-                        Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие
-                        продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все
-                        будет Ом!
+                        Наш заклад виконує послуги доставки замовлень за містом Балаклія та Балаклійського району.
+                        Ця послуга абсолютно безкоштовна, також Ви можете забрати замовлення самостійно.
                     </div>
                 </div>
                 <div class="tabcontent">
                     <img src="img/tabs/hamburger.jpg" alt="vegy">
                     <div class="tabcontent__descr">
-                        Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы
-                        тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+                        Наш заклад працює з 11:00 до 23:00. Замовлення на доставку приймаються з 10:00 до 22:00. 
+                        Розраховуйте на те, що потрібен час, щоб приготувати вашу страву. З повагою, кухарі!
                     </div>
                 </div>
                 <div class="tabheader">
@@ -89,8 +88,8 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
                     <div class="tabheader__items">
                         <div class="tabheader__item tabheader__item_active">Про нас</div>
                         <div class="tabheader__item">Акції</div>
-                        <div class="tabheader__item">Постное</div>
-                        <div class="tabheader__item">Сбалансированное</div>
+                        <div class="tabheader__item">Доставка</div>
+                        <div class="tabheader__item">Інформація</div>
                     </div>
                 </div>
             </div>
@@ -104,30 +103,29 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
         <div class="bgc_y"></div>
         <div class="container">
             <div class="offer__text">
-                <h2 class="title">Что мы можем вам предложить?</h2>
+                <h2 class="title">Що ми можемо запропонувати?</h2>
                 <div class="offer__descr">
-                    Наша основная идея - это правильное питание. Оно может быть простым и вкусным. Мы не просто
-                    доставка, мы сервис! Мы взяли на себя все расчеты БЖУ, калорийности, объемов порций и прочие важные,
-                    но скучные аспекты. Вам остается только полезная, сытная и правильная еда, которую мы привозим прямо
-                    под дверь.
+                    Наша основна ідея - це швидке та смачне харчування. Воно смачне, а деякі страви навіть корисні.
+                    Ми не просто доставка, ми сервіс! Ми взяли на себе розрахунки калорій, Ви можете самостійно дізнатися
+                    яка норма калорій саме для вас і вже обирати страви за необхідність. Вам залишається лише замовити
+                    страви, які довподопи та насолоджуватися смаком. А все інше ми зробимо за Вас!
+                    
                 </div>
             </div>
             <div class="offer__action">
-                <button data-modal class="btn btn_dark">Связаться с нами</button>
+                <button data-modal class="btn btn_dark">Зворотній дзвiнок</button>
             </div>
         </div>
         <div class="container">
             <div class="offer__advantages">
-                <h2>Быстро и полезно</h2>
+                <h2>Швидко и смачно!</h2>
                 <div class="offer__advantages-text">
-                    Готовка дома занимает много сил, времени и нервов. Мы привозим еду сразу на целый день, и ты можешь
-                    действовать так, как тебе удобно, не подстраиваясь ни под кого и будучи уверенным в качестве
-                    продукта!
+                    Приготування вдома затрачає багато сил та часу, особливо після тяжкого робочогу дня або перед святом.
+                    Ми доставимо їжу в будь-який час, як забажаєте.
                 </div>
-                <h2>Правильный рацион</h2>
+                <h2>Насолджуйся життям!</h2>
                 <div class="offer__advantages-text">
-                    Мы разработали специальное меню, где учтены все нюансы правильного питания, от баланса БЖУ до их
-                    приготовления и дробления рациона.
+                   
                 </div>
             </div>
             <div class="offer__slider">
@@ -166,42 +164,42 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
 
     <div class="calculating">
         <div class="container">
-            <h2 class="title">Рассчитаем вашу потребность в калориях?
+            <h2 class="title">Розрахуємо вашу калорійність?
             </h2>
             <div class="calculating__field">
                 <div class="calculating__subtitle">
-                    Ваш пол
+                    Ваша стать
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div  id="female" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div id="male" class="calculating__choose-item">Мужчина</div>
+                    <div  id="female" class="calculating__choose-item calculating__choose-item_active">Дівчина</div>
+                    <div id="male" class="calculating__choose-item">Хлопець</div>
                 </div>
 
                 <div class="calculating__subtitle">
-                    Ваша конституция
+                    Ваші параметри
                 </div>
                 <div class="calculating__choose calculating__choose_medium">
-                    <input type="text" id="height" placeholder="Введите рост" class="calculating__choose-item">
-                    <input type="text" id="weight" placeholder="Введите вес" class="calculating__choose-item">
-                    <input type="text" id="age" placeholder="Введите возраст" class="calculating__choose-item">
+                    <input type="text" id="height" placeholder="Ваш зріст" class="calculating__choose-item">
+                    <input type="text" id="weight" placeholder="Ваша вага" class="calculating__choose-item">
+                    <input type="text" id="age" placeholder="Скільки вам років?" class="calculating__choose-item">
                 </div>
 
                 <div class="calculating__subtitle">
-                    Выберите вашу физическая активность
+                    Оберіть фізичну активність
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div data-ratio="1.2" id="low" class="calculating__choose-item">Низкая активность </div>
-                    <div data-ratio="1.375" id="small" class="calculating__choose-item calculating__choose-item_active">Невысокая
-                        активность</div>
-                    <div data-ratio="1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
-                    <div data-ratio="1.725" id="high" class="calculating__choose-item">Высокая активность</div>
+                    <div data-ratio="1.2" id="low" class="calculating__choose-item">Низька активність </div>
+                    <div data-ratio="1.375" id="small" class="calculating__choose-item calculating__choose-item_active">Невисока
+                        активність</div>
+                    <div data-ratio="1.55" id="medium" class="calculating__choose-item">Середня активність</div>
+                    <div data-ratio="1.725" id="high" class="calculating__choose-item">Висока активність</div>
                 </div>
 
                 <div class="calculating__divider"></div>
 
                 <div class="calculating__total">
                     <div class="calculating__subtitle">
-                        Ваша суточная норма калорий:
+                        Ваша суточна норма калорій:
                     </div>
                     <div class="calculating__result">
                         <span>2700 </span> ккал
@@ -214,7 +212,7 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
     <div class="divider"></div>
 
     <div class="menu">
-        <h2 class="title">Наше меню на день</h2>
+        <h2 class="title">ХІТ продаж!!!</h2>
         
         <div class="menu__field">
             <div class="container">
@@ -242,12 +240,12 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
 
     <div class="order">
         <div class="container">
-            <div class="title">Заказывай пробный день прямо сейчас!</div>
+            <div class="title">Є запитання? Ми передзвонимо!</div>
             <form action="#" class="order__form">
-                <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
+                <input required placeholder="Ваше ім'я" name="name" type="text" class="order__input">
+                <input required placeholder="Ваш номер телефону" name="phone" type="phone" class="order__input">
                 <img src="icons/right.svg" alt="right">
-                <button id="btn-request" class="btn btn_dark btn_min">Перезвонить мне</button>
+                <button id="btn-request" class="btn btn_dark btn_min">Передзвоніть мені</button>
             </form>
         </div>
     </div>
@@ -258,26 +256,26 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
         <div class="bgc_y"></div>
         <div class="container">
             <div class="promotion__text">
-                <div class="title">Мы здесь!</div>
+                <div class="title">ТИ знайдеш нас тут!</div>
                 <div class="promotion__descr">
                    
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.817428803142!2d36.2267020238276!3d50.014777091470286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1243c457187%3A0xa7ceb6be9eeb6acd!2z0J_QsNC80Y_RgtC90LjQuiDRgdGC0YPQtNC10L3RgtGDLdC_0YDQvtCz0YDQsNC80LzQuNGB0YLRgw!5e0!3m2!1sru!2sua!4v1652435409458!5m2!1sru!2sua" margin-left="5" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
                     <!-- </div>  -->
             </div>
             <div class="promotion__timer">
-                <div class="title">Осталось до конца акции:</div>
+                <div class="title">Новий заклад через:</div>
                 <div class="timer">
                     <div class="timer__block">
                         <span id="days">90</span>
-                        дней
+                        днів
                     </div>
                     <div class="timer__block">
                         <span id="hours">20</span>
-                        часов
+                        годин
                     </div>
                     <div class="timer__block">
                         <span id="minutes">56</span>
-                        минут
+                        хвилин
                     </div>
                     <div class="timer__block">
                         <span id="seconds">20</span>
@@ -291,7 +289,7 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
     <footer class="footer">
         <div class="container">
             <div class="social">
-                <div class="subtitle">Мы в социальных сетях:</div>
+                <div class="subtitle">Ми в соціальних мережах:</div>
                 <a href="https://www.instagram.com/oldieks/" class="link" Target="_blank"> instagram</a>
                 <a href="#" class="link">facebook</a>
             </div>
@@ -299,7 +297,7 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
                 <img src="icons/veg.svg" alt="pepper">
             </div>
             <div class="call">
-                <div class="subtitle">Или позвоните нам</div>
+                <div class="subtitle">Контакти</div>
                 <a href="#" class="link">+38 066 473 1105</a>
                 <a href="#" class="link">+38 066 473 1105</a>
             </div>
@@ -311,10 +309,10 @@ $result = mysqli_query($induction, "SELECT * FROM `menulist` where dailymenu = '
             <div class="modal__content">
                 <form action="#">
                     <div data-close class="modal__close">&times;</div>
-                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
-                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    <div class="modal__title">Ми передзвонемо!</div>
+                    <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефону" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Пердзвоніть мені!</button>
                 </form>
             </div>
         </div>
